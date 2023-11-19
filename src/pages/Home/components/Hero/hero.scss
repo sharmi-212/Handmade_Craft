@@ -1,0 +1,40 @@
+@import "../../../../vendors/mixins";
+@import "../../../../vendors/variables";
+
+.hero {
+    .hero-content {
+        height: 524px;
+        background-image: url('https://img.freepik.com/premium-photo/embroidery-needlework-background-with-linen-hoop-colorful-floss-thread-scissors-card-tag-female-hand-handmade_897771-445.jpg?w=740');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom right;
+        padding: 80px 100px;
+
+        @media (max-width: 922px) {
+            height: 430px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 70px 0 70px 40px;
+        }
+        .center-text {
+            text-align: center;
+        }
+        
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            
+            color: rgba(61, 27, 216, 0.897);
+
+            @media (max-width: 922px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 544px) {
+                font-size: 32px;
+            }
+        }
+    }
+}
